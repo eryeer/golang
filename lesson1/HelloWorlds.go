@@ -16,10 +16,10 @@ func variableInit() {
 func variableZeroValue() {
 	var a int
 	var s string
-	fmt.Printf("%d %s\n", a, s)
+	fmt.Printf("%d %q\n", a, s)
 }
 
-func variableDeduction() {
+func variableTypeDeduction() {
 	var a, b, c, d = 3, 5, true, "aaa"
 	fmt.Println(a, b, c, d)
 }
@@ -30,7 +30,9 @@ func variableShort() {
 
 func main() {
 	fmt.Println("hello world")
-	//variableInit()
-	variableDeduction()
-	fmt.Println(aaa,bbb,ccc)
+	variableInit()
+	variableZeroValue()
+	variableTypeDeduction()
+	variableShort()
+	fmt.Println(aaa, bbb, ccc)
 }
