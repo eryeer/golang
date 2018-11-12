@@ -16,7 +16,7 @@ func variableInit() {
 func variableZeroValue() {
 	var a int
 	var s string
-	fmt.Printf("%d %q\n", a, s)
+	fmt.Printf("%d %q\n", a, s) //%q打印引号
 }
 
 func variableTypeDeduction() {
@@ -24,7 +24,7 @@ func variableTypeDeduction() {
 	fmt.Println(a, b, c, d)
 }
 func variableShort() {
-	a, b, c, d := 3, 5, true, "aaa"
+	a, b, c, d := 3, 5, true, "aaa" //使用冒号等于赋值变量
 	fmt.Println(a, b, c, d)
 }
 
